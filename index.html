@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Tech</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e0e6a74f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Pantalla de carga -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>Cargando tecnología...</p>
+  </div>
+
+  <!-- Barra de navegación -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#noticias">Noticias</a></li>
+      <li><a href="#curiosidades">Curiosidades</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main id="contenido">
+    <header>
+      <h1><i class="fas fa-microchip"></i> TechBlog</h1>
+      <p>Explora lo último en tecnología</p>
+      <button id="toggleTheme"><i class="fas fa-moon"></i> Modo Oscuro</button>
+    </header>
+
+    <section class="contenido" id="inicio">
+      <h2><i class="fas fa-robot"></i> ¿Qué es la tecnología?</h2>
+      <p>La tecnología es el conjunto de conocimientos y herramientas que permiten al ser humano transformar su entorno para satisfacer sus necesidades.</p>
+      <p>Desde la rueda hasta la inteligencia artificial, la tecnología ha estado presente en todos los momentos importantes de la humanidad. Nos permite comunicarnos, curar enfermedades, explorar el espacio y mejorar la calidad de vida.</p>
+    </section>
+
+    <section class="contenido" id="noticias">
+      <h2><i class="fas fa-satellite-dish"></i> Últimas noticias</h2>
+      <div class="tarjetas">
+        <div class="tarjeta">
+          <h3>Apple lanza su nuevo chip M5</h3>
+          <p>Con un rendimiento 300% superior al M3, Apple revoluciona el mercado.</p>
+          <button class="btnLeer" data-modal="modal1">Leer más</button>
+        </div>
+        <div class="tarjeta">
+          <h3>Google mejora su IA</h3>
+          <p>La nueva Gemini 3.5 supera a modelos anteriores con velocidad y precisión.</p>
+          <button class="btnLeer" data-modal="modal2">Leer más</button>
+        </div>
+        <div class="tarjeta">
+          <h3>Microsoft presenta su nueva Surface</h3>
+          <p>Más ligera, potente y con inteligencia artificial integrada.</p>
+          <button class="btnLeer" data-modal="modal3">Leer más</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenido" id="curiosidades">
+      <h2><i class="fas fa-lightbulb"></i> Curiosidades tecnológicas</h2>
+      <ul class="curiosidades-lista">
+        <li>
+      <span class="curiosidad-titulo">El primer mouse fue hecho de madera.</span>
+      <p class="curiosidad-detalle">Fue inventado en 1964 por Douglas Engelbart y tenía un diseño muy básico comparado con los modernos.</p>
+    </li>
+    <li>
+      <span class="curiosidad-titulo">Google fue inicialmente llamado BackRub.</span>
+      <p class="curiosidad-detalle">El nombre proviene del análisis de enlaces (backlinks) que realizaba para indexar páginas web.</p>
+    </li>
+    <li>
+      <span class="curiosidad-titulo">Más de 90% de los datos en el mundo fueron generados en los últimos 2 años.</span>
+      <p class="curiosidad-detalle">Esto refleja la explosión de la información digital y el uso masivo de dispositivos conectados.</p>
+    </li>
+  </ul>
+</section>
+
+    <section class="contenido" id="contacto">
+      <h2><i class="fas fa-envelope"></i> Contáctanos</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <textarea placeholder="Mensaje..."></textarea>
+        <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>📚 Proyecto TIC - Universidad Tecnológica de Panamá</p>
+    </footer>
+  </main>
+
+  <!-- MODALES DE NOTICIAS -->
+  <div id="modal1" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" data-modal="modal1">&times;</span>
+      <h2>Apple lanza su nuevo chip M5</h2>
+      <p>Publicado el 2 de julio de 2025</p>
+      <p>Apple ha anunciado oficialmente el lanzamiento del chip M5, una evolución revolucionaria de su arquitectura basada en ARM. Este nuevo procesador ofrece un rendimiento gráfico y de procesamiento 300% superior al del M3, con un consumo energético optimizado para dispositivos móviles.</p>
+      <p>Se espera que el M5 esté presente en la nueva línea de MacBooks y iPads, prometiendo velocidades sin precedentes para tareas de edición, programación, inteligencia artificial y gaming.</p>
+      <p>Además, Apple ha destacado su nuevo sistema de refrigeración pasiva que permite mantener temperaturas bajas sin ventiladores.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" data-modal="modal2">&times;</span>
+      <h2>Google mejora su IA</h2>
+      <p>Publicado el 3 de julio de 2025</p>
+      <p>Google ha presentado su modelo Gemini 3.5, una inteligencia artificial con mejoras significativas en comprensión y velocidad, superando a modelos previos en precisión y capacidad de aprendizaje.</p>
+      <p>Esta IA podrá integrarse en servicios de búsqueda, asistentes personales y aplicaciones de productividad, mejorando la experiencia del usuario.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" data-modal="modal3">&times;</span>
+      <h2>Microsoft presenta su nueva Surface</h2>
+      <p>Publicado el 4 de julio de 2025</p>
+      <p>Microsoft ha lanzado la nueva Surface, más ligera y potente, que incluye inteligencia artificial integrada para mejorar la productividad, la creatividad y la conectividad.</p>
+      <p>Su diseño elegante y batería de larga duración la hacen ideal para profesionales y estudiantes.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
